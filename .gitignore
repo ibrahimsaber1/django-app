@@ -129,3 +129,4 @@ htmlcov/
 # Testing
 test-results/
 junit*.xml
+bin/
