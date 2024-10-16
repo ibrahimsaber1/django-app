@@ -1,0 +1,11 @@
+
+{% extends "base.html" %}
+
+
+{% block content %}
+    <h1>This is our home template</h1>
+    <p>nice to see you :)</p>
+    <h3>the user is: {{request.user}}</h3>
+    <h3>is the user loged in: {{request.user.is_authenticated}}</h3>
+    {% comment %} {{request.user.is_authenticated}} {% endcomment %}
+{% endblock content %}
