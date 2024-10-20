@@ -8,8 +8,15 @@ def home_view(request,*args, **kwargs):
     return render(request ,'home.html',{} )
 
 def contact_page(request):
+    contact_data = {
+        'name': 'Ibrahim Saber',
+        'age': '24',
+        'sex' : 'male',
+        'job' : 'software engneer',
+        'fields' : ['data analysis','data science','medical rep.']
+    }
 
-    return render(request , 'contacr.html',{})
+    return render(request , 'contacr.html',contact_data)
 
 def about_page(request):
     my_context = {

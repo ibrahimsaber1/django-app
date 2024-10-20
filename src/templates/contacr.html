@@ -4,5 +4,17 @@
 <h1>This is The contact page</h1>
 <p>pla pla pla</p>
 <p>fill free to contact us any time u want</p>
+
+<h3>{{name}}</h3>
+<h3>{{age}}</h3>
+<h3>{{sex}}</h3>
+<h3>{{job}}</h3>
+
+<ol>
+    {% for feild in fields  %}
+        <li>{{feild}}</li>
+    {% endfor %}
+</ol>
+
 {% endblock content %}
 
