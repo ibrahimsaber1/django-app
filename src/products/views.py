@@ -4,12 +4,15 @@ from .models import Product
 
 def product_details_view(request):
     obj = Product.objects.get(id=1)
+    # data = {
+    #     'title': obj.title,
+    #     'description': obj.description,
+    #     'price' : obj.price,
+    #     'color': obj.color,
+    #     'sammary': obj.sammary,
+    #     'featured' : obj.featured   
+    # }
     data = {
-        'title': obj.title,
-        'description': obj.description,
-        'price' : obj.price,
-        'color': obj.color,
-        'sammary': obj.sammary,
-        'featured' : obj.featured   
+        'object':obj
     }
-    return render(request,'product/detailes.html',data)
+    return render(request,'products/detailes.html',data)
