@@ -7,6 +7,6 @@ class Product(models.Model):
     price =models.DecimalField(decimal_places=2 , max_digits=12000)
     color = models.CharField(max_length=50)
     sammary = models.TextField(default="this ths a cool product")
-    featured = models.BooleanField(default=True)
+    featured = models.BooleanField(default=True) 
     
     
